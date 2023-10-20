@@ -90,7 +90,7 @@ for (const [property, { open, close }] of propertyWithValues) {
 Let's continue with our football betting app!
 
 
-2. Use a loop to calculate the average odd and log it to the console (We already studied how to calculate averages, you can go check if you don't remember)
+
 3. Print the 3 odds to the console, but in a nice formatted way, exaclty like this:
       Odd of victory Bayern Munich: 1.33
       Odd of draw: 3.25
@@ -150,5 +150,18 @@ const game = {
 
 // 1. Loop over the game.scored array and print each player name to the console, along with the goal number (Example: "Goal 1: Lewandowski")
 for (let i = 0; i < game.scored.length; i++) {
-  console.log(`Goal ${i + 1}: ${game.scored[i]}`);
+  //   console.log(`Goal ${i + 1}: ${game.scored[i]}`);
 }
+
+for (const [i, plyer] of game.scored.entries()) {
+  //   console.log(`Goal ${i + 1}: ${plyer}`);
+}
+
+// 2. Use a loop to calculate the average odd and log it to the console (We already studied how to calculate averages, you can go check if you don't remember)
+
+const odds = Object.values(game.odds);
+// console.log(odds);
+let average = 0;
+for (const odd of odds) average += odd;
+average /= odds.length;
+// console.log(average);
