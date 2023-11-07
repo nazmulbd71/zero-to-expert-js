@@ -1,12 +1,7 @@
 "use strict";
 
 // Coding Challenge #1
-
 /* 
-7. The team with the lower odd is more likely to win. Print to the console which team is more likely to win, WITHOUT using an if/else statement or the ternary operator.
-
-TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
-
 GOOD LUCK 😀
 */
 
@@ -86,3 +81,10 @@ const printGoals = function (...players) {
 };
 
 printGoals(...game.scored);
+
+// 7. The team with the lower odd is more likely to win. Print to the console which team is more likely to win, WITHOUT using an if/else statement or the ternary operator.
+
+// TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
+
+team1 > team2 && console.log("Team one win");
+team1 < team2 && console.log("Team two win");
