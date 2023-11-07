@@ -171,4 +171,4 @@ gameEvents.delete(64);
 
 // 3. Print the following string to the console: "An event happened, on average, every 9 minutes" (keep in mind that a game has 90 minutes)
 const time = [...gameEvents.keys()].pop();
-console.log(time);
+console.log(`An event happened, on average, every ${time / gameEvents.size}`);
