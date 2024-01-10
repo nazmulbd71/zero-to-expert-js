@@ -276,3 +276,5 @@ console.log(eurowings);
 
 const bookEw = book.bind(eurowings);
 bookEw(11, "Nazmul");
+
+console.log("I love you");
